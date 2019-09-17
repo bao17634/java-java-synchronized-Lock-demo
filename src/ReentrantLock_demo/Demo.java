@@ -1,4 +1,4 @@
-package test_lock;
+package ReentrantLock_demo;
 
 /**
  * @ClassName: Demo

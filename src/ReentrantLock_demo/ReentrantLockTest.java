@@ -1,11 +1,11 @@
-package test_lock;
+package ReentrantLock_demo;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @ClassName: ReentrantLockTest
- * @Description: ReentrantLock例子
+ * @Description: ReentrantLock 例子
  * @Author: yanrong
  * @Date: 8/29/2019 2:28 PM
  * @Version: 1.0
@@ -23,11 +23,8 @@ public class ReentrantLockTest {
             } finally {
                 lock.unlock();
             }
-
         }
-
     }
-
     static public class MyThread extends Thread {
 
         private MyService service;

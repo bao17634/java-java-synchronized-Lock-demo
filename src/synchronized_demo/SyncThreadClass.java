@@ -1,4 +1,4 @@
-package test_synchronized;
+package synchronized_demo;
 
 /**
  * @ClassName: SyncThreadClass
@@ -10,7 +10,7 @@ package test_synchronized;
 /**
  * 同步线程
  */
-class SyncThreadClass implements Runnable {
+public class SyncThreadClass implements Runnable {
     private static int count;
 
     public SyncThreadClass() {

@@ -1,7 +1,7 @@
-package test_synchronized;
+package synchronized_demo.demon_main;
 
 /**
- * @ClassName: test_synchronized.ExampleCode
+ * @ClassName: synchronized_demo.demon_main.ExampleCode
  * @Description: TODO
  * @Author: yanrong
  * @Date: 8/28/2019 9:38 AM

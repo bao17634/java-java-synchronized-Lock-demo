@@ -1,4 +1,4 @@
-package example_lock;
+package AtomicInteger_demo;
 
 /**
  * @ClassName: CasClass

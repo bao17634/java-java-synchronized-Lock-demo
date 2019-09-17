@@ -1,8 +1,8 @@
-package test_synchronized;
+package synchronized_demo;
 
 /**
- * @ClassName: test_synchronized.SyncThread
- * @Description: TODO
+ * @ClassName: synchronized_demo.SyncThread
+ * @Description: synchronized测试，你如果需要测试synchronized修饰一下代码块，就把下面的代码注释掉了上面的注释取掉
  * @Author: yanrong
  * @Date: 8/28/2019 12:14 PM
  * @Version: 1.0
@@ -12,7 +12,7 @@ public class SyncThread implements Runnable{
     public SyncThread() {
         count = 0;
     }
-    //synchronized修饰一个代码块
+    //synchronized修饰一个代码块用这个就把下面的代码注释掉
 //    public  void run() {
 //        synchronized(this) {
 //            for (int i = 0; i < 5; i++) {
@@ -25,7 +25,9 @@ public class SyncThread implements Runnable{
 //            }
 //        }
 //    }
-    //synchronized修饰一个静态方法
+
+
+    //synchronized修饰一个静态方法 用这个就把上面代码的注释掉
     public synchronized static void method() {
         for (int i = 0; i < 5; i ++) {
             try {
@@ -36,13 +38,14 @@ public class SyncThread implements Runnable{
             }
         }
     }
+    @Override
+    public synchronized void run() {
+        method();
+    }
 
     public int getCount() {
         return count;
     }
 
-    @Override
-    public synchronized void run() {
-        method();
-    }
+
 }

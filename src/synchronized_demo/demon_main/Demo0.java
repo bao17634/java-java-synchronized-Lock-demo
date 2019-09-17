@@ -1,9 +1,12 @@
-package test_synchronized;
+package synchronized_demo.demon_main;
+
+import synchronized_demo.entity.Account;
+import synchronized_demo.AccountOperator;
+import synchronized_demo.SyncThread;
 
 /**
- * @ClassName: test_synchronized.Demo0
- * @Description: synchronized
- * 修饰一个代码块
+ * @ClassName: synchronized_demo.demon_main.Demo0
+ * @Description: 测试哪个就不要注释那个，其余的注释掉
  * @Author: yanrong
  * @Date: 8/28/2019 12:16 PM
  * @Version: 1.0
@@ -25,7 +28,7 @@ public class Demo0 {
         /**
          * 两个线程访问同一个对象，会发生阻塞
          */
-//        test_synchronized.SyncThread s = new test_synchronized.SyncThread();
+//        synchronized_demo.SyncThread s = new synchronized_demo.SyncThread();
 //        Thread t1 = new Thread(s);
 //        Thread t2 = new Thread(s);
 //        t1.start();
@@ -39,15 +42,15 @@ public class Demo0 {
 //        thread1.start();
 //        thread2.start();
         /**
-         * 给指定对象加锁
+         *  synchronized给指定对象加锁
          */
-//        Account account = new Account("张三", 10000.0f);
-//        AccountOperator accountOperator = new AccountOperator(account);
-//        final int THREAD_NUM = 5;
-//        Thread threads[] = new Thread[THREAD_NUM];
-//        for (int i = 0; i < THREAD_NUM; i ++) {
-//            threads[i] = new Thread(accountOperator, "Thread" + i);
-//            threads[i].start();
-//        }
+        Account account = new Account("张三", 10000.0f);
+        AccountOperator accountOperator = new AccountOperator(account);
+        final int THREAD_NUM = 5;
+        Thread threads[] = new Thread[THREAD_NUM];
+        for (int i = 0; i < THREAD_NUM; i ++) {
+            threads[i] = new Thread(accountOperator, "Thread" + i);
+            threads[i].start();
+        }
     }
 }

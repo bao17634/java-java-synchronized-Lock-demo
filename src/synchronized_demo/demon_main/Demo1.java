@@ -1,8 +1,10 @@
-package test_synchronized;
+package synchronized_demo.demon_main;
+
+import synchronized_demo.SyncThreadClass;
 
 /**
  * @ClassName: Demo1
- * @Description: 修饰类
+ * @Description: synchronized 修饰类
  * @Author: yanrong
  * @Date: 8/28/2019 5:54 PM
  * @Version: 1.0

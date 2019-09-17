@@ -1,4 +1,7 @@
-package test_synchronized;
+package synchronized_demo;
+
+
+import synchronized_demo.entity.Account;
 
 /**
  * @ClassName: AccountOperator

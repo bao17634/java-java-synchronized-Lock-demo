@@ -1,4 +1,4 @@
-package test_synchronized;
+package synchronized_demo.entity;
 
 /**
  * @ClassName: Account
@@ -7,7 +7,7 @@ package test_synchronized;
  * @Date: 8/28/2019 2:34 PM
  * @Version: 1.0
  */
-class Account {
+public class Account {
     String name;
     float amount;
     public Account(String name, float amount) {
